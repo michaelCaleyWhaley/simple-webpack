@@ -1,3 +1,26 @@
+html,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: grey;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: 60px auto;
+
+  &__image {
+    box-sizing: border-box;
+    height: 300px;
+    width: 33.33%;
+    padding: 10px;
+  }
 }
