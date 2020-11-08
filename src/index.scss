@@ -10,6 +10,37 @@ body {
   padding: 0;
 }
 
+.carousel-wrap {
+  position: relative;
+}
+
+.dot-wrap {
+  .carousel-wrap--active & {
+    display: none;
+  }
+
+  position: absolute;
+  bottom: -33px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+  &__dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 17px;
+
+    &:before {
+      content: '•';
+    }
+  }
+}
+
 .carousel {
   position: relative;
   display: flex;
@@ -18,9 +49,17 @@ body {
   margin: 60px auto;
 
   &__image {
+    display: none;
     box-sizing: border-box;
     height: 300px;
     width: 33.33%;
     padding: 10px;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      display: block;
+    }
   }
+
 }
