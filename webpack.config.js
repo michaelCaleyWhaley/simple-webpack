@@ -8,15 +8,6 @@ module.exports = {
   devServer: {
     contentBase: "./dist",
   },
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.s[ac]ss$/i,
-  //       use: ["style-loader", "css-loader", "sass-loader"],
-  //     },
-  //   ],
-  // },
-
   plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
