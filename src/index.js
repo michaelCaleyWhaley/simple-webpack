@@ -1,3 +1,3 @@
-import "./index.scss";
+import "./main.scss";
 
 console.log("test");
